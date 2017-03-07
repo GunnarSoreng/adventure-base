@@ -44,3 +44,32 @@ from   Person.Person pp ,
 	   Person.EmailAddress pea 
 where  pp.BusinessEntityID = ppp.BusinessEntityID and
        pp.BusinessEntityID = pea.BusinessEntityID;
+
+
+select * from vw_NameInfo;
+
+-- Pseudocode Examples from presentation:
+
+--update savings 
+--set Balance += 500
+--where AccountID = 3;
+
+--update checking 
+--set Balance -= 500
+--where AccountID = 3;
+
+--Or create a stored procedure:
+
+--create procedure transferFunds --Must be a two-part name
+--AS
+--begin transaction
+--update savings 
+--set Balance += 500
+--where AccountID = 3;
+--update checking 
+--set Balance -= 500
+--where AccountID = 3;
+-- if it works ok:
+--commit transaction
+-- or if some errors occur:
+--rollback transaction
