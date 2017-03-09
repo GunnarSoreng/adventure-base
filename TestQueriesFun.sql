@@ -32,6 +32,7 @@ where
 	psp.CountryRegionCode = pcr.CountryRegionCode
 ;
 
+-- -----------------------------------------------------
 
 select * 
 from 
@@ -54,3 +55,10 @@ from
 	vw_ContactInfo
 where
 	Country = 'Canada';
+
+	select 
+	* 
+from 
+	vw_ContactInfo v
+where
+v.State= 'Texas';
