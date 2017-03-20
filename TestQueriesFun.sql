@@ -6,7 +6,6 @@ order by 2 desc;
 
 CREATE VIEW vw_ContactInfo
 AS
-
 select
 	pp.FirstName,
 	pp.LastName,
