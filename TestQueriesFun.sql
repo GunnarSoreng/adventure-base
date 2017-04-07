@@ -32,7 +32,6 @@ where
 	psp.CountryRegionCode = pcr.CountryRegionCode
 GO
 
-
 select * from sys.views where name = 'vw_ContactInfo';
 
 -- -----------------------------------------------------
