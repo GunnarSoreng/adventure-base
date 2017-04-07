@@ -1,8 +1,8 @@
-select LastName "Last Name", count(LastName) "Number"
-from Person.Person
-group by LastName
-order by 2 desc;
+USE AdventureWorks2012;
+GO
 
+DROP VIEW vw_ContactInfo;
+GO
 
 CREATE VIEW vw_ContactInfo
 AS
@@ -30,7 +30,10 @@ where
 	pbea.AddressID = pa.AddressID and
 	pa.StateProvinceID = psp.StateProvinceID and
 	psp.CountryRegionCode = pcr.CountryRegionCode
-;
+GO
+
+
+select * from sys.views where name = 'vw_ContactInfo';
 
 -- -----------------------------------------------------
 
